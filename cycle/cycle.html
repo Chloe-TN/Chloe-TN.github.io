@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		 <canvas id="myCanvas" width="500" height="200"></canvas>
+		 
+		    <script>
+		    const canvas = document.getElementById('myCanvas');
+		    const context = canvas.getContext('2d');
+		    const centerX = canvas.width / 2;
+		    const centerY = canvas.height / 2;
+		    const radius = 50;
+		    
+		    context.beginPath();
+		    context.fillStyle = '#fbcdff';
+		    context.strokeStyle = '#fbcdff';
+		    context.lineWidth = 2;
+		    
+		    context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+		    context.fill();
+		    context.stroke();
+		    </script> 
+	</body>
+</html>
